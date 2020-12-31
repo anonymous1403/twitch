@@ -10,8 +10,8 @@ $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR'])
 
 //Printing
 
-$fh = fopen('log.txt', 'a');
-fwrite($fh, 'Indirizzo IP: '."".$ip ."\n");
-fwrite($fh, 'Hostname: '."".$hostname ."\n");
-fclose($fh);
+$foreach = fopen('log.txt', 'a');
+fwrite($foreach, 'Indirizzo IP: '."".$ip ."\n");
+fwrite($foreach, 'Hostname: '."".$hostname ."\n");
+fclose($foreach);
 ?>
