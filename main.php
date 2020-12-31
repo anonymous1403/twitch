@@ -13,5 +13,5 @@ $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR'])
 $fh = fopen('log.txt', 'a');
 fwrite($fh, 'Indirizzo IP: '."".$ip ."\n");
 fwrite($fh, 'Hostname: '."".$hostname ."\n");
-fclose($fh)
+fclose($fh);
 ?>
